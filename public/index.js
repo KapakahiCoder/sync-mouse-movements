@@ -3,6 +3,7 @@ import {
   ref,
   set,
   push,
+  onValue,
 } from "https://www.gstatic.com/firebasejs/9.15.0/firebase-database.js";
 
 const db = getDatabase();
@@ -39,3 +40,7 @@ onValue(coordsListRef, (snapshot) => {
   pointer.style.left = newX + "px";
   pointer.style.top = newY + "px";
 });
+
+const pointer = document.createElement("div");
+pointer.classList.add("pointer");
+document.body.appendChild(pointer);
