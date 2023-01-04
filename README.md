@@ -15,7 +15,7 @@ Try it out: [Sync Mouse Movements](https://sync-mouse-movements-1fb74.web.app)
 2.  Add a realtime database to the project
 3.  In your project settings, you will find your firebase config settings
 
-![config](./public/assets/config.png
+![config](./public/assets/config.png)
 
 4. Replace your firebase config with the one in the config.js file
 
