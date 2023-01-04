@@ -15,7 +15,6 @@ document.addEventListener("mousemove", (event) => {
   let x = event.clientX;
   let y = event.clientY;
   let xyCoords = { x, y };
-  console.log(xyCoords);
 
   // Record mouse movements in the DB
   const newCordsRef = push(coordsListRef);
@@ -37,12 +36,11 @@ onValue(coordsListRef, (snapshot) => {
     x = child.val().coords.x;
     y = child.val().coords.y;
     coordsObj = { x, y };
-    coordsArray.push(coordsObj);
+    coordsArray.push(coordsObj); // TODO: refactor to make more efficient
   });
 
   let newX = coordsArray[coordsArray.length - 1].x;
   let newY = coordsArray[coordsArray.length - 1].y;
-  console.log(newX, newY, "xyxyxyxyxyx");
   pointer.style.left = newX + "px";
   pointer.style.top = newY + "px";
 });
