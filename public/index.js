@@ -22,6 +22,12 @@ document.addEventListener("mousemove", (event) => {
   set(newCordsRef, { coords: xyCoords });
 });
 
+// Create virtual pointer
+const pointer = document.createElement("div");
+pointer.classList.add("pointer");
+document.body.appendChild(pointer);
+
+// Retrieve mouse coordinates from the DB and have virtual pointer follow those movements
 let coordsArray = [];
 let x;
 let y;
@@ -40,7 +46,3 @@ onValue(coordsListRef, (snapshot) => {
   pointer.style.left = newX + "px";
   pointer.style.top = newY + "px";
 });
-
-const pointer = document.createElement("div");
-pointer.classList.add("pointer");
-document.body.appendChild(pointer);
