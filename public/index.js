@@ -36,11 +36,18 @@ onValue(coordsListRef, (snapshot) => {
     x = child.val().coords.x;
     y = child.val().coords.y;
     coordsObj = { x, y };
-    coordsArray.push(coordsObj); // TODO: refactor to make more efficient
+    coordsArray.push(coordsObj);
+    coordsArray.shift(); // TODO: refactor to make more efficient
   });
+  // Save the new coordsArray to the DB
+  set(coordsListRef, coordsArray)
+    .then(() => {
+      console.log("Record deleted successfully");
+    })
+    .catch((error) => {
+      console.log("Error deleting record:", error);
+    });
 
-  let newX = coordsArray[coordsArray.length - 1].x;
-  let newY = coordsArray[coordsArray.length - 1].y;
-  pointer.style.left = newX + "px";
-  pointer.style.top = newY + "px";
+  pointer.style.left = x + "px";
+  pointer.style.top = y + "px";
 });
