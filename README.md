@@ -14,6 +14,10 @@ Try it out: [Sync Mouse Movements](https://sync-mouse-movements-1fb74.web.app)
 <br /> 
 <br />
 
+## Here's a video of the sycronized mouse movements in both windows
+
+<video src="./public/assests/synced-movements.mp4" controls></video>
+
 ## Getting Started
 
 ### Project setup
