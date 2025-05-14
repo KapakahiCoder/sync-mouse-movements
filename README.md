@@ -3,21 +3,39 @@
 An app that will sync the mouse movements if it is open in 2 different browsers.
 
 Try it out: [Sync Mouse Movements](https://sync-mouse-movements-1fb74.web.app)
+<br /> 
+<br /> 
 
-### Here's some picture of the app:
+## Here's some picture of the app:
 
 <strong>Mouse cursor is synced in both browser windows</strong>
 ![syncedCursor](./public/assets/syncedCursor.png)
 
-## Project setup
+<br /> 
+<br />
+
+## Getting Started
+
+### Project setup
 
 1.  Please create a new Firebase project
 2.  Add a realtime database to the project
 3.  In your project settings, you will find your firebase config settings
+<br /> 
+<br /> 
+
 
 ![config](./public/assets/config.png)
 
 4. Replace your firebase config with the one in the config.js file
+
+<br /> 
+
+
+### Development Server
+
+Start the development server on `http://localhost:5000`:
+
 
 ```
 firebase serve
