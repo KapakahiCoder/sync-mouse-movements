@@ -65,6 +65,10 @@ Pull requests are welcome. For major changes, please open an issue first to disc
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
+## Security Note
+
+This project uses public Firebase Database rules for demonstration purposes. The database access is intentionally configured to allow public read/write operations only for mouse coordinate data at the `mouse/position` path. No sensitive information is collected or stored.
+
 ## Author
 
 Garrett Chun - [![Github][1.1]][1] [![Twitter][1.2]][2]
