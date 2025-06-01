@@ -57,6 +57,12 @@ firebase serve
 - [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
 - [Firebase](https://firebase.google.com/)
 
+
+## Deployed Using
+
+- [Google Firebase](https://firebase.google.com/)
+
+  
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
